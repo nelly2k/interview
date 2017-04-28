@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CyclesInLinkedList.cs" />
+    <Compile Include="FindDuplicationInArray.cs" />
     <Compile Include="IsThisBst.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
