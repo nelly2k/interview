@@ -5,6 +5,7 @@ namespace Interview
     /// <summary>
     /// Data Structures: Cycles in Linked List
     /// https://www.youtube.com/watch?v=MFOAbpfrJ8g&list=PLHursRsSD348tf828Y17UWjpSyXuJPXUw
+    /// Time complexity is O(n) because it is require to traverse through the whole list
     /// </summary>
     public class CyclesInLinkedList
     {
