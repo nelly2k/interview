@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CyclesInLinkedList.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="FindDuplicationInArray.cs" />
     <Compile Include="IsThisBst.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

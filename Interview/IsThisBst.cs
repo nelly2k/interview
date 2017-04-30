@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace Interview
@@ -13,18 +9,17 @@ namespace Interview
     /// </summary>
     public class IsThisBst
     {
-
-        public bool IsBst(BstNode root)
+        public bool IsBst(BstNode root, int min = int.MinValue, int max = int.MaxValue)
         {
             if (root == null)
             {
                 return true;
             }
+            return (root.Left == null || (root.Left.Data < root.Data && root.Left.Data > min))
+                   && (root.Right == null || (root.Right.Data > root.Data && root.Right.Data < max))
+                   && IsBst(root.Left, min, root.Data)
+                   && IsBst(root.Right, root.Data, max);
 
-            return (root.Left == null || root.Left.Data < root.Data)
-                   && (root.Right == null || root.Right.Data > root.Data)
-                   && IsBst(root.Left)
-                   && IsBst(root.Right);
         }
 
         [Test]
@@ -93,6 +88,33 @@ namespace Interview
             node0.Right = node02;
             Assert.That(IsBst(node0), Is.False);
         }
+
+        [Test]
+        public void DeepDuplicate()
+        {
+            var node0 = new BstNode(50);
+            var node01 = new BstNode(40);
+            var node002 = new BstNode(45);
+            var node0002 = new BstNode(50);
+
+
+            node0.Left = node01;
+            node01.Right = node002;
+            node002.Right = node0002;
+            Assert.That(IsBst(node0), Is.False);
+        }
+
+        [Test]
+        public void DeepWrong()
+        {
+            var node0 = new BstNode(5);
+            var node02 = new BstNode(6);
+            var node001 = new BstNode(4);
+
+            node0.Right = node02;
+            node02.Left = node001;
+            Assert.That(IsBst(node0), Is.False);
+        }
     }
 
 
@@ -112,6 +134,11 @@ namespace Interview
         {
             var node = (BstNode)obj;
             return node != null && node.Data.Equals(Data);
+        }
+
+        public override string ToString()
+        {
+            return Data.ToString();
         }
     }
 }
