@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Brackets.cs" />
     <Compile Include="CyclesInLinkedList.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FindDuplicationInArray.cs" />
@@ -51,9 +52,16 @@
     <Compile Include="IslandCounter.cs" />
     <Compile Include="IsThisBst.cs" />
     <Compile Include="LargestRegion.cs" />
+    <Compile Include="LinkedList\CyclesInLinkedList.cs" />
+    <Compile Include="LinkedList\LlNode.cs" />
+    <Compile Include="LinkedList\PrintBackward.cs" />
+    <Compile Include="LinkedList\SumOfLinkedLists.cs" />
     <Compile Include="Primality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PutNonZeroLeft.cs" />
     <Compile Include="QuickSort.cs" />
+    <Compile Include="Strings\ParsePlusMinus.cs" />
+    <Compile Include="TwoSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
