@@ -48,7 +48,9 @@
     <Compile Include="FindDuplicationInArray.cs" />
     <Compile Include="Graph\DepthFirstSearch.cs" />
     <Compile Include="Graph\GraphNode.cs" />
+    <Compile Include="IslandCounter.cs" />
     <Compile Include="IsThisBst.cs" />
+    <Compile Include="LargestRegion.cs" />
     <Compile Include="Primality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickSort.cs" />
