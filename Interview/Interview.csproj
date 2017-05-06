@@ -46,6 +46,7 @@
     <Compile Include="CyclesInLinkedList.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FindDuplicationInArray.cs" />
+    <Compile Include="Graph\BreathFirstSearch.cs" />
     <Compile Include="Graph\DepthFirstSearch.cs" />
     <Compile Include="Graph\GraphNode.cs" />
     <Compile Include="IsThisBst.cs" />
