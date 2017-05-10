@@ -50,6 +50,7 @@
     <Compile Include="Graph\BreathFirstSearch.cs" />
     <Compile Include="Graph\DepthFirstSearch.cs" />
     <Compile Include="Graph\GraphNode.cs" />
+    <Compile Include="Graph\IsWordExistsInGraph.cs" />
     <Compile Include="IslandCounter.cs" />
     <Compile Include="IsThisBst.cs" />
     <Compile Include="LargestRegion.cs" />
@@ -57,11 +58,16 @@
     <Compile Include="LinkedList\LlNode.cs" />
     <Compile Include="LinkedList\PrintBackward.cs" />
     <Compile Include="LinkedList\SumOfLinkedLists.cs" />
+    <Compile Include="Numbers\ClosestToYear.cs" />
     <Compile Include="Primality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PutNonZeroLeft.cs" />
     <Compile Include="QuickSort.cs" />
+    <Compile Include="Strings\LongestPolindromicSubstring.cs" />
+    <Compile Include="Strings\LongestSubstringWithoutRepeating.cs" />
     <Compile Include="Strings\ParsePlusMinus.cs" />
+    <Compile Include="BinaryTree\StringToBinaryTree.cs" />
+    <Compile Include="Strings\ReplaceDigitsWithLetters.cs" />
     <Compile Include="TwoSum.cs" />
   </ItemGroup>
   <ItemGroup>
