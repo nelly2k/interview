@@ -16,8 +16,8 @@ namespace Interview.Graph
         [Test]
         public void SearchTest()
         {
-            var s = new GraphNode<char>('S');
-            var b = new GraphNode<char>('B');
+            var s = new GraphNodeVis<char>('S');
+            var b = new GraphNodeVis<char>('B');
             s.Add(b);
             s.Add('A','Z','X');
             b.Add('C');
@@ -29,11 +29,11 @@ namespace Interview.Graph
         [Test]
         public void Dfs_With_loop_NotFound()
         {
-           var a = new GraphNode<char>('A'); 
+           var a = new GraphNodeVis<char>('A'); 
             a.Add('D');
-            var t=new GraphNode<char>('T');
-            var b=new GraphNode<char>('B');
-            var c=new GraphNode<char>('C');
+            var t=new GraphNodeVis<char>('T');
+            var b=new GraphNodeVis<char>('B');
+            var c=new GraphNodeVis<char>('C');
             a.Add(b,c);
 
             b.Add(t);
@@ -43,7 +43,7 @@ namespace Interview.Graph
             Assert.That(iterations, Is.EqualTo(5));
         }
 
-        public bool Dfs<T>(GraphNode<T> root, T data)
+        public bool Dfs<T>(GraphNodeVis<T> root, T data)
         {
             iterations++;
             root.IsVisited = true;

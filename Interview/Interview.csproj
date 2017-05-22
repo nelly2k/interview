@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Brackets.cs" />
+    <Compile Include="Numbers\Diamond.cs" />
+    <Compile Include="Strings\Brackets.cs" />
     <Compile Include="CyclesInLinkedList.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FindDuplicationInArray.cs" />
     <Compile Include="Graph\BreathFirstSearch.cs" />
     <Compile Include="Graph\DepthFirstSearch.cs" />
-    <Compile Include="Graph\GraphNode.cs" />
+    <Compile Include="Graph\GraphNodeVis.cs" />
     <Compile Include="Graph\IsWordExistsInGraph.cs" />
     <Compile Include="IslandCounter.cs" />
     <Compile Include="IsThisBst.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="QuickSort.cs" />
     <Compile Include="Strings\LongestPolindromicSubstring.cs" />
     <Compile Include="Strings\LongestSubstringWithoutRepeating.cs" />
+    <Compile Include="Strings\NumOfValidCombinations.cs" />
     <Compile Include="Strings\ParsePlusMinus.cs" />
     <Compile Include="BinaryTree\StringToBinaryTree.cs" />
     <Compile Include="Strings\ReplaceDigitsWithLetters.cs" />

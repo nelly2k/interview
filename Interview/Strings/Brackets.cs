@@ -42,6 +42,12 @@ namespace Interview
             Assert.That(IsBalansed("{{[[([]()){}]]}}{"), Is.False);
         }
 
+        [Test]
+        public void Balansed()
+        {
+            Assert.That(IsBalansed("{}()[{}]"), Is.True);
+        }
+
         private bool IsBalansed(string s)
         {
             var st = new Stack<char>();

@@ -13,7 +13,7 @@ namespace Interview.Graph
         [Test]
         public void Dog_Exists()
         {
-            var a = new GraphNode<char>('a');
+            var a = new GraphNodeVis<char>('a');
             a.Chain('d').Chain('o').Chain('g');
             Assert.That(IsExists(a, "dog"), Is.True);
         }
@@ -21,7 +21,7 @@ namespace Interview.Graph
         [Test]
         public void Dog_NotExists()
         {
-            var a = new GraphNode<char>('a');
+            var a = new GraphNodeVis<char>('a');
             a.Add('b', 'r', 't');
             a.Chain('m').Chain('t');
             Assert.That(IsExists(a, "dog"), Is.False);
@@ -30,7 +30,7 @@ namespace Interview.Graph
         [Test]
         public void Dog_NotExists1()
         {
-            var a = new GraphNode<char>('a');
+            var a = new GraphNodeVis<char>('a');
             a.Add('b', 'r', 't');
             a.Chain('m').Chain('t').Chain('d').Chain('g').Chain('o');
             
@@ -40,7 +40,7 @@ namespace Interview.Graph
         [Test]
         public void Dog_Exists1()
         {
-            var a = new GraphNode<char>('a');
+            var a = new GraphNodeVis<char>('a');
             a.Add('b', 'r', 't');
             a.Chain('m').Chain('d').Chain('d').Chain('o').Chain('g').Add('d');
 
@@ -50,11 +50,11 @@ namespace Interview.Graph
         [Test]
         public void WithLoop()
         {
-            var m = new GraphNode<char>('m');
-            var d = new GraphNode<char>('d');
-            var t = new GraphNode<char>('t');
-            var o = new GraphNode<char>('o');
-            var g = new GraphNode<char>('g');
+            var m = new GraphNodeVis<char>('m');
+            var d = new GraphNodeVis<char>('d');
+            var t = new GraphNodeVis<char>('t');
+            var o = new GraphNodeVis<char>('o');
+            var g = new GraphNodeVis<char>('g');
             
             m.Add(t,d);
 
@@ -66,7 +66,7 @@ namespace Interview.Graph
             Assert.That(IsExists(m, "dog"), Is.True);
         }
 
-        private bool IsExists(GraphNode<char> node, string word, int index = 0)
+        private bool IsExists(GraphNodeVis<char> node, string word, int index = 0)
         {
             if (!word.Contains(node.Data))
             {
