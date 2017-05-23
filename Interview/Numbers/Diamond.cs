@@ -49,11 +49,8 @@ namespace Interview.Numbers
                     str += " ";
                 }
             }
-            if (curr == 1)
-            {
-                return str;
-            }
-            else if (curr < num)
+           
+            if (curr < num)
             {
                 return str + Environment.NewLine + Calc(num, curr + 2);
             }
