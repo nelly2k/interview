@@ -48,6 +48,12 @@ namespace Interview.Strings
             return true;
         }
 
+        private bool IsAllUniquHAnotherHash(string str)
+        {
+            var hash = new HashSet<char>(str);
+            return hash.Count == str.Length;
+        }
+
         private bool IsAllUniqueQuick(string str, int? left = null, int? right = null)
         {
             var foundDuplicate = false;

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Numbers\Diamond.cs" />
+    <Compile Include="Numbers\LotteryNumbers.cs" />
     <Compile Include="Strings\Brackets.cs" />
     <Compile Include="CyclesInLinkedList.cs" />
     <Compile Include="Extensions.cs" />
